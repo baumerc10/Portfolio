@@ -1,0 +1,249 @@
+sd* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --off-white: #e0eae4;
+    --green: rgb(13, 71, 19);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color:rgb(82, 82, 80);
+    font-size: 2rem;
+};
+
+ul {
+    display:block;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.header {
+    padding: 2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:rgb(29, 78, 78);
+    height: 20rem;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 5rem;
+    float: left;
+    color: #ffffff;
+    margin: 3rem;
+    padding: 5rem;
+}
+
+.header article {
+    display: inline-block;
+    padding-top:10rem;
+    margin-right: 2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+
+
+
+.header article ul {
+    list-style-type: none;
+    float: right;
+}
+
+.header article ul li {
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+
+.galaxy {
+    height: 80rem;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    margin-left: 0;
+    margin-right:0;
+    background-image: url("../images/galaxy-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.subtitle {
+    position: absolute;
+    bottom: 0px;
+    right: 3rem;
+    font-size: 5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffff;
+    background-color:rgb(29, 78, 78);
+    padding: 1rem 1rem;
+}
+
+.github-img {
+    display: flex;
+    flex: 4 0 0;
+    width: 20rem;
+    height: 100rem;
+    resize: both;
+    overflow: auto;
+}
+
+.linkedin-img {
+    display: flex;
+    flex: 1 0 0;
+    width: 20rem;
+    height: 55rem;
+    resize: both;
+    overflow: auto;
+}
+
+.flex-img a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: solid 1px #123;
+}
+
+.github-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.content-1 {
+    width: 100%;
+    height: 20rem;
+    position: relative;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding: 3rem;
+}
+
+.content-2 {
+    width: 100%;
+    height: 175rem;
+    position: relative;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding: 3rem;
+}
+
+.content-3 {
+    width: 100%;
+    height: 20rem;
+    position: relative;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding: 3rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+}
+
+.work-card {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+}
+
+.card-header {
+    height: 3rem;
+}
+
+.work-card .card-header {
+    position: relative;
+    margin: 1rem -14rem 1.5rem 3rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--off-white);
+    border-radius: 5px;
+    transition: all 1s ease-in-out;
+    color: #ffffff;
+}
+
+.work-card {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.work-card:hover {
+    -webkit-filter: none !important;
+    filter: none !important;
+    /*box-shadow: inset 0px 0px 8px var(--green), 0 0 15px var(--green);*/
+}
+
+.work-card .work-block {
+    flex-grow: 1;
+}
+
+.work-card pre {
+    white-space: pre-wrap;
+    overflow: auto;
+    tab-size: 4;
+    padding: 1.2rem 1.2rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    padding: 5rem;
+    height: 20rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #020202;
+}
+
+@media screen and (min-width: 768px) {
+    .card-column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    .card-column:last-child {
+      flex-grow: 1;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    header {
+      width: 100%;
+    }
+  
+    .card-column {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
