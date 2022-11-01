@@ -108,6 +108,15 @@ footer {
     overflow: auto;
 }
 
+.fitness-tracker-img {
+    display: flex;
+    flex: 1 0 0;
+    width: 20rem;
+    height: 150rem;
+    resize: both;
+    overflow: auto;
+}
+
 .flex-img a {
     display: flex;
     width: 100%;
@@ -134,7 +143,7 @@ footer {
 
 .content-2 {
     width: 100%;
-    height: 250rem;
+    height: 300rem;
     position: relative;
     margin-left: 0rem;
     margin-right: 0rem;
